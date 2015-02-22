@@ -16,6 +16,7 @@ public class WhiteDot {
   @Getter
   private double distance;
   @Getter
+  /*area of the white dot*/
   private double area;
   @Getter
   private double angle;

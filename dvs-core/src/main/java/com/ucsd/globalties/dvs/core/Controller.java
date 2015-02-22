@@ -63,40 +63,48 @@ public class Controller {
       
     }
     if (patient.getPhotos().get(0).getLeftEye() != null) {
-      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_horizontal.jpg",patient.getPhotos().get(0).getLeftEye().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_horizontal.jpg",
+    		  patient.getPhotos().get(0).getLeftEye().getMat());
       detected.put("left_eye_horizontal", Main.OUTPUT_FILE + "left_eye_horizontal.jpg");
     }
     if (patient.getPhotos().get(0).getLeftEye().getPupil() != null) {
       patient.getPhotos().get(0).getLeftEye().getPupil().getWhiteDot();
-      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_pupil_horizontal.jpg",patient.getPhotos().get(0).getLeftEye().getPupil().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_pupil_horizontal.jpg",
+    		  patient.getPhotos().get(0).getLeftEye().getPupil().getMat());
       detected.put("left_eye_pupil_horizontal", Main.OUTPUT_FILE + "left_eye_pupil_horizontal.jpg");
     }
     if (patient.getPhotos().get(0).getRightEye() != null) {
-      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_horizontal.jpg",patient.getPhotos().get(0).getRightEye().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_horizontal.jpg",
+    		  patient.getPhotos().get(0).getRightEye().getMat());
       detected.put("right_eye_horizontal", Main.OUTPUT_FILE + "right_eye_horizontal.jpg");
     }
     if (patient.getPhotos().get(0).getRightEye().getPupil() != null) {
       patient.getPhotos().get(0).getRightEye().getPupil().getWhiteDot();
-      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_pupil_horizontal.jpg",patient.getPhotos().get(0).getRightEye().getPupil().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_pupil_horizontal.jpg",
+    		  patient.getPhotos().get(0).getRightEye().getPupil().getMat());
       detected.put("right_eye_pupil_horizontal", Main.OUTPUT_FILE + "right_eye_pupil_horizontal.jpg");
     }
     
     if (patient.getPhotos().get(1).getLeftEye() != null) {
-      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_vertical.jpg",patient.getPhotos().get(1).getLeftEye().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_vertical.jpg",
+    		  patient.getPhotos().get(1).getLeftEye().getMat());
       detected.put("left_eye_vertical", Main.OUTPUT_FILE + "left_eye_vertical.jpg");
     }
     if (patient.getPhotos().get(1).getLeftEye().getPupil() != null) {
       patient.getPhotos().get(1).getLeftEye().getPupil().getWhiteDot();
-      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_pupil_vertical.jpg",patient.getPhotos().get(1).getLeftEye().getPupil().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "left_eye_pupil_vertical.jpg",
+    		  patient.getPhotos().get(1).getLeftEye().getPupil().getMat());
       detected.put("left_eye_pupil_vertical", Main.OUTPUT_FILE + "left_eye_pupil_vertical.jpg");
     }
     if (patient.getPhotos().get(1).getRightEye() != null) {
-      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_vertical.jpg",patient.getPhotos().get(1).getRightEye().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_vertical.jpg",
+    		  patient.getPhotos().get(1).getRightEye().getMat());
       detected.put("right_eye_vertical", Main.OUTPUT_FILE + "right_eye_vertical.jpg");
     }
     if (patient.getPhotos().get(1).getRightEye().getPupil() != null) {
       patient.getPhotos().get(1).getRightEye().getPupil().getWhiteDot();
-      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_pupil_vertical.jpg",patient.getPhotos().get(1).getRightEye().getPupil().getMat());
+      Highgui.imwrite(Main.OUTPUT_FILE + "right_eye_pupil_vertical.jpg",
+    		  patient.getPhotos().get(1).getRightEye().getPupil().getMat());
       detected.put("right_eye_pupil_vertical", Main.OUTPUT_FILE + "right_eye_pupil_vertical.jpg");
     }
     
